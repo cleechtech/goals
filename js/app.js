@@ -1,6 +1,6 @@
 var app = angular.module('slideshow', ['ngAnimate', 'firebase']);
 
-app.constant('ENDPOINT_URI', 'https://angular-slideshow.firebaseio.com/');
+app.constant('ENDPOINT_URI', 'https://connorsgoals.firebaseio.com/');
 
 app.controller('MainCtrl', function ($scope, $location, RemoteSlide) {
     var LEFT_ARROW = 37,
@@ -23,11 +23,11 @@ app.controller('MainCtrl', function ($scope, $location, RemoteSlide) {
     }
 
     function onKeyUp(keyCode) {
-        if(!$scope.isPresenter) return; // Only allow presenter to navigate
-
         if (keyCode === LEFT_ARROW) {
+            console.log('left arrow')
             prevSlide();
         } else if (keyCode === RIGHT_ARROW) {
+            console.log('right arrow')
             nextSlide();
         }
     }
@@ -49,7 +49,6 @@ app.controller('MainCtrl', function ($scope, $location, RemoteSlide) {
         direction: 'left'
     };
 
-    $scope.isPresenter = ($location.search()).presenter;
     $scope.onKeyUp = onKeyUp;
     $scope.isCurrentSlideIndex = isCurrentSlideIndex;
     $scope.getDirection = getDirection;
