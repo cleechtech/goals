@@ -4,7 +4,7 @@ html{
 body {
     overflow: hidden;
     min-height: 100%;
-    background-color: #000;
+    background-color: #3366FF;
 }
 
 .slide {
@@ -45,11 +45,11 @@ body {
 
 .title {
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     left: 20px;
     font-family: 'Oswald', serif;
     font-size: 10.0em;
-    color: #AAD11D;
+    color: #900000;
     width: 100%;
 }
 
