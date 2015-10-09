@@ -37,10 +37,14 @@ app.controller('MainCtrl', function ($scope, $location, RemoteSlide) {
     }
 
     $scope.slides = [
-        {id: 'slide00', title: 'writing/blogging', subtitle: 'technical posts, commmunity development, evolving society'},
-        {id: 'slide01', title: 'Machine Learning', subtitle: 'build systems that glean insights from large ^+multiple datasets (statistics)'},
-        {id: 'slide02', title: 'User Interfaces', subtitle: 'comprehensive tools to make findings accessible and relevant to many people'},
-        {id: 'slide04', title: 'Launch a startup in Cape Town'}
+        {id: 'slide00', title: 'Save $19,000 for Hack Reactor', subtitle: 'Make enough money to pay for a three month intensive javascript programming course'},
+        {id: 'slide01', title: 'Move to San Francisco', subtitle: 'Afford expensive rent'},
+        {id: 'slide02', title: 'Become a published author', subtitle: 'Start writing'},
+        {id: 'slide03', title: 'Race across the Pacific Ocean', subtitle: 'on a sailboat'},
+        {id: 'slide04', title: 'Do business in Cape Town', subtitle: 'Surf and visit friends'},
+        {id: 'slide05', title: 'Build a tech company', subtitle: 'Make something that helps people'},
+        {id: 'slide06', title: 'Brew beer', subtitle: 'Keep it crafty'},
+        {id: 'slide07', title: 'Make it to Vegas', subtitle: 'Build a team I can count on. Have fun. Enjoy the ride!'}
     ];
 
     $scope.remoteSlide = {
